@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;BJ_Rule4.java&apos; to &apos;Main.java&apos;&#x0D;&#x0A;- Original project: &apos;BJ_Rule4(1011)&apos;&#x0D;&#x0A;- Original element: &apos;BJ_Rule4.java&apos;&#x0D;&#x0A;- Renamed element: &apos;Main.java&apos;" description="Rename compilation unit &apos;BJ_Rule4.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;{BJ_Rule4.java" name="Main.java" references="false" stamp="1483177914982" version="1.0"/>
+</session>

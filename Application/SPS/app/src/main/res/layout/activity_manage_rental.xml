@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.user.sps.manageLend"
+    android:orientation="vertical">
+
+
+
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:id="@+id/buttBack"
+
+        android:layout_marginBottom="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:id="@+id/buttSearch"
+        android:layout_marginRight="23dp"
+        android:layout_marginEnd="23dp"
+        android:layout_alignTop="@+id/buttBack"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:text="Empty"
+        android:id="@+id/buttPd1"
+        android:layout_marginTop="35dp"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:layout_width="95dp"
+        android:layout_height="35dp"
+        android:id="@+id/editText"
+        android:text="Approved"
+        android:textSize="20sp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/buttPd2" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:text="Empty"
+        android:id="@+id/buttPd2"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/buttPd1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:text="Empty"
+        android:id="@+id/buttPd3"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/buttPd2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:text="Empty"
+        android:id="@+id/buttPd4"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/buttPd3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:text="Empty"
+        android:id="@+id/buttPd5"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/buttPd4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="95dp"
+        android:layout_height="35dp"
+        android:id="@+id/editText2"
+        android:text="Date"
+        android:textSize="20sp"
+        android:layout_above="@+id/buttPd3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="95dp"
+        android:layout_height="35dp"
+        android:id="@+id/editText3"
+        android:text="Date"
+        android:layout_above="@+id/buttPd4"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="95dp"
+        android:layout_height="35dp"
+        android:id="@+id/editText4"
+        android:text="Date"
+        android:textSize="20sp"
+        android:layout_above="@+id/buttPd5"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="95dp"
+        android:layout_height="35dp"
+        android:id="@+id/editText5"
+        android:text="Date"
+        android:layout_alignBottom="@+id/buttPd5"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:id="@+id/editText20"
+        android:text="List"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="19sp" />
+
+</RelativeLayout>

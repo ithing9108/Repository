@@ -1,0 +1,18 @@
+/**
+ * http://usejsdoc.org/
+ */
+var express = require('express');
+var app = express();
+app.use(express.static('public'));		//퍼블릭이라는 폴더안에 것을 출력(끄림이든,txt든)
+app.get('/route', function(req, res){
+	res.send('Hello Router, <img src="/route.png>')
+})
+app.get('/', function(req, res){		//라우트라는 이미지
+	res.send('Hello home page');
+});
+app.get('/login', function(req, res){
+	res.send('<h1>Login Please</h1>');
+});
+app.listen(3000, function(){
+	console.log('Connected 3000 port!');
+})

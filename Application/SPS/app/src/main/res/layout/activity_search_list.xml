@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.user.sps.category">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText21"
+        android:text="ProductList"
+        android:textSize="25sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/buttPd1"
+        android:layout_alignStart="@+id/buttPd1" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="davinchcode"
+        android:id="@+id/buttPd1"
+        android:layout_below="@+id/editText21"
+        android:layout_alignLeft="@+id/buttPd2"
+        android:layout_alignStart="@+id/buttPd2" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttPd2"
+        android:layout_below="@+id/buttPd1"
+        android:layout_alignLeft="@+id/buttPd3"
+        android:layout_alignStart="@+id/buttPd3" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttPd3"
+        android:layout_below="@+id/buttPd2"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttPd4"
+        android:layout_below="@+id/buttPd3"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttPd5"
+        android:layout_below="@+id/buttPd4"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttPd6"
+        android:layout_below="@+id/buttPd5"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttPd7"
+        android:layout_below="@+id/buttPd6"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:id="@+id/buttBack"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

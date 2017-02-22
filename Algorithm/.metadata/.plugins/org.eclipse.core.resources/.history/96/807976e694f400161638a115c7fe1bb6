@@ -1,0 +1,15 @@
+/**
+ * http://usejsdoc.org/
+ */
+
+var nodemailer = require('node')
+
+var nodemailer = require('nodemailer')
+
+var smtpTransport = nodemailer.createTransport("SMTP", {
+	service: 'Gmail', 
+	auth : {
+		user: 'ithing108@gmail.com',
+		pass: 'password'
+	}
+});
