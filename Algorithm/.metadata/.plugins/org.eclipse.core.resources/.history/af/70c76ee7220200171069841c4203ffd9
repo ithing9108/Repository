@@ -1,0 +1,27 @@
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Scanner;
+
+public class MazeMaker {
+
+	public static void main(String[] args){
+		
+		int jumpNum; 							//점프 종류의 수
+		int[] inputJump;
+		int startX = 1;							//시작위치 (1,0)으로 고정ㅇ
+		int startY = 0;
+		int [][] map = new int[3][3];			//맵은 3*3으로 고정
+		Queue queueX = new LinkedList();
+		Queue queueY = new LinkedList();
+		Scanner sc = new Scanner(System.in);
+		
+		jumpNum = sc.nextInt();
+		inputJump = new int[jumpNum];
+
+		for (int i=0; i<jumpNum; i++){
+			inputJump[i]= sc.nextInt();
+		}
+		
+		
+	}
+}

@@ -1,0 +1,10 @@
+import java.util.Scanner;
+
+public class plate {
+
+	public static void main(String[] args){
+		
+		Scanncer sc = new Scanner(System.in);
+		
+	}
+}

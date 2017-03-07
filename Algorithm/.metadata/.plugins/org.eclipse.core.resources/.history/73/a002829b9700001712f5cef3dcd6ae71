@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class CrazyBot {
+
+	public static void main(String[] args){
+		
+		int[] input = new int[5];			// 0=n, 1=µ¿, 2=¼­, 3=³², 4=ºÏ
+		double[] probability = new double[4];
+		String[] line;
+		Scanner sc =new Scanner(System.in);
+		boolean[][] map = new boolean[100][100];
+		
+		line = sc.nextLine().split(" ");
+		for(int i=0; i<5; i++){				// ÀÎÇ² °ªÀ» ÇÒ´ç
+			input[i] = Integer.parseInt(line[i]);
+		}
+		for(int j=0; j<4; j++){
+			probability[j] = input[j+1] / 100.0;
+			System.out.println(probability[j]);
+		}
+		
+		
+		
+	}
+}
