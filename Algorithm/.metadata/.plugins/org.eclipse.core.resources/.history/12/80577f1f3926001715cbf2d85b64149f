@@ -1,0 +1,26 @@
+import  java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args){
+		
+		String input;
+		int answer = 0;
+		String[] result;
+		Scanner sc = new Scanner(System.in);
+		input = sc.nextLine();
+        System.out.println(input.replaceAll("c=|c-|dz=|d-|lj|nj|s=|z=","1").length());
+
+		result = input.split("=|-|j");
+
+		for(int i=0; i<input.length(); i++)
+			if(input.charAt(i)=='a' || input.charAt(i)=='e' || input.charAt(i)=='o' || input.charAt(i)=='i' || input.charAt(i)=='u')
+				answer +=1;
+		//for(int i=0; i<result.length; i++)
+		//	System.out.println(result[i]);
+
+
+		//	answer += result.length;
+	//	System.out.println(result.length);
+	//	System.out.println(answer);
+	}
+}

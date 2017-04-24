@@ -2,31 +2,37 @@ import java.util.Scanner;
 
 public class Main {
 
+	static int result = Integer.MAX_VALUE;
+	
 	public static void main(String[] args){
 		
-		int inputNum = 0;
-		int result = 0;
-		int process = 1;
+		int inputNum;
 		Scanner sc = new Scanner(System.in);
 		
 		inputNum = sc.nextInt();
 
-		while(true){
-			System.out.println(process);
-			if(inputNum-process == 0){ break;}
-			process *= 3;
-			if(inputNum%process != 0){
-				process /= 3;
-				process *= 2;
-			}
-			if (inputNum % process !=0){		//여기에 else if 쓰면 난리난다.
-				process /= 2;
-				inputNum -= 1;
-			}
-			
-			
-			result += 1;
-		}
+		makeOne( inputNum, 0);
 		System.out.println(result);
 	}
+	
+	static void makeOne(int input, int process){		//입력값과 현재 result값
+		
+		if(process>=result)
+			return;
+		if(input==1){
+			if(process<result)
+				result = process;			 // D[n] = min( D[n-1], D[n/2], D[n/3] ) + 1;
+		}									//  이게 더 좋은 방법
+		if(input<1)
+			return;
+		
+		if(input%3==0)
+			makeOne(input/3, process+1);
+		if(input%2==0)
+			makeOne(input/2, process+1);
+		makeOne(input-1, process+1);
+		
+		return;
+	}
+	
 }

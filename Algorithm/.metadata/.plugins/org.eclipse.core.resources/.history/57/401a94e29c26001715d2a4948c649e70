@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args){
+	
+		boolean[] primeList;
+		int min = 0;
+		int sum = 0;
+		int input1, input2;
+		Scanner sc = new Scanner(System.in);
+		input1 = sc.nextInt();
+		input2 = sc.nextInt();
+		
+		primeList = new boolean[input2];
+		for(int i=0; i<Math.sqrt(input2); i++){
+			for(int j=0; j<input2; j++){
+				if(primeList[j]==false){
+					if(j%i==0){
+						primeList[j]=true;
+					}
+				}
+			}
+		}
+		for(int i=0; i<input2; i++){
+			if(primeList[i]==false){
+				sum += i;
+				if(min==0) min = i;
+			}
+		}
+		System.out.println(sum);
+		System.out.println(min);
+	}
+}

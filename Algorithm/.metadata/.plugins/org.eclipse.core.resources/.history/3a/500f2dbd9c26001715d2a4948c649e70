@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args){
+	
+		boolean[] primeList;
+		int min = 0;
+		int sum = 0;
+		int input1, input2;
+		Scanner sc = new Scanner(System.in);
+		input1 = sc.nextInt();
+		input2 = sc.nextInt();
+		
+		primeList = new boolean[input2];
+		for(int i=0; i<Math.sqrt(input2); i++){
+			for(int j=0; j<input2; j++){
+				
+			}
+		}
+
+	}
+}

@@ -1,0 +1,13 @@
+import  java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args){
+		
+		String input;
+		String[] result;
+		Scanner sc = new Scanner(System.in);
+		input = sc.nextLine();
+		result = input.split("= - j");
+		System.out.println(result.length);
+	}
+}
